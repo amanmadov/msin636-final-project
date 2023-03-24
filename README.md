@@ -22,21 +22,20 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Simple Book Management App with Express.js and MongoDB
+Simple Intranet App for a Virtual Company with Express.js and MongoDB
 
-- [x] Can `Create` Books
-- [x] Can `Update` Books
-- [x] Can `Delete` Books
-- [x] Can `Display` Books
+- [x] Can `Create` Company Announcements/Tasks/Personnel Info/Other Info
+- [x] Can `Update` Company Announcements/Tasks/Personnel Info/Other Info
+- [x] Can `Delete` Company Announcements/Tasks/Personnel Info/Other Info
+- [x] Can `Display` Company Announcements/Tasks/Personnel Info/Other Info
 
 
 
 <br/>
 
 ## Technologies Used
- - Visual Studio Code Version: 1.66.1
- - Google Chrome Version 100.0.4896.88
  - Express.js
+ - Express Handlebars
  - MongoDB
  - Mongoose
 
