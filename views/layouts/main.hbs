@@ -1,73 +1,77 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>{{docTitle}}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="An intranet app for FS company" name="description">
-        <meta content="Nury Amanmadov" name="author">
-        <!-- #region App Favicon   -->
-        <link rel="shortcut icon" href="/assets/images/favicon.ico">
-        <!-- #endregion App Favicon  -->
-        <!-- #region Third Party CSS  -->
-        <link href="/assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css">
-        <!-- #endregion Third Party CSS  -->
-        <!-- #region App CSS   -->
-        <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css">
-        <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
-        <link href="/assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
-        <!-- #endregion App CSS   -->
-    </head>
-    <body class="loading" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
-        <div class="wrapper">
+<html lang="en">
 
-            <!-- #region Left Sidebar  -->
-            {{>left-sidebar}}
-            <!-- #endregion Left Sidebar  -->
+<head>
+    <meta charset="utf-8">
+    <title>{{docTitle}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="An intranet app for FS company" name="description">
+    <meta content="Nury Amanmadov" name="author">
+    <!-- #region App Favicon   -->
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+    <!-- #endregion App Favicon  -->
+    <!-- #region Third Party CSS  -->
+    <link href="/assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css">
+    <!-- #endregion Third Party CSS  -->
+    <!-- #region App CSS   -->
+    <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style">
+    <link href="/assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style">
+    <!-- #endregion App CSS   -->
+</head>
 
-            <!-- #region Main Content  -->
-            <div class="content-page">
-                <div class="content">
-                    <!-- #region Top Navbar  -->
-                    {{>top-navbar}}
-                    <!-- #endregion Top Navbar  -->
-                    
-                    <!-- #region Body  -->
-                    {{{body}}}
-                    <!-- #endregion Body  -->
-                    
-                </div>
+<body class="loading"
+    data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+    <div class="wrapper">
 
-                <!-- #region Footer  -->
-                {{>footer}}
-                <!-- #endregion Footer  -->
+        <!-- #region Left Sidebar  -->
+        {{>left-sidebar}}
+        <!-- #endregion Left Sidebar  -->
+
+        <!-- #region Main Content  -->
+        <div class="content-page">
+            <div class="content">
+                <!-- #region Top Navbar  -->
+                {{>top-navbar}}
+                <!-- #endregion Top Navbar  -->
+
+                <!-- #region Body  -->
+                {{{body}}}
+                <!-- #endregion Body  -->
 
             </div>
-            <!--#endregion Main Content  -->
+
+            <!-- #region Footer  -->
+            {{>footer}}
+            <!-- #endregion Footer  -->
 
         </div>
-        <!-- #region Bundle -->
-        <script src="/assets/js/vendor.min.js"></script>
-        <script src="/assets/js/app.min.js"></script>
-        <!-- #endregion Bundle -->
-        
-        {{#if renderApexCharts}} 
-        <!-- #region Third Party JS -->
-        <script src="/assets/js/vendor/apexcharts.min.js"></script>
-        <!-- #endregion Third Party JS -->
-        {{/if}}
+        <!--#endregion Main Content  -->
 
-        {{#if renderAnalytics}} 
-        <!-- #region Demo Dashboard -->
-        <script src="/assets/js/pages/demo.dashboard-analytics.js"></script>
-        <!-- #endregion Demo Dashboard -->
-        {{/if}}
+    </div>
+    <!-- #region Bundle -->
+    <script src="/assets/js/vendor.min.js"></script>
+    <script src="/assets/js/app.min.js"></script>
+    <!-- #endregion Bundle -->
 
-        {{#if renderCharts}} 
-        <!-- #region Demo Chart -->
-            <script src="/assets/js/pages/demo.apex-column.js"></script>
-        <!-- #endregion Demo Chart -->
-        {{/if}}
+    {{#if renderApexCharts}}
+    <!-- #region Third Party JS -->
+    <script src="/assets/js/vendor/apexcharts.min.js"></script>
+    <!-- #endregion Third Party JS -->
+    {{/if}}
 
-    </body>
+    {{#if renderAnalytics}}
+    <!-- #region Demo Dashboard -->
+    <script src="/assets/js/pages/demo.dashboard-analytics.js"></script>
+    <!-- #endregion Demo Dashboard -->
+    {{/if}}
+
+    {{#if renderCharts}}
+    <!-- #region Demo Chart -->
+    <script src="/assets/js/pages/demo.apex-column.js"></script>
+    <!-- #endregion Demo Chart -->
+    {{/if}}
+
+</body>
+
 </html>

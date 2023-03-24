@@ -15,6 +15,7 @@ const pageNotFoundRoutes = require('./routes/authentication/404');
 const homeRoutes = require('./routes/home');
 const announcementsRoutes = require('./routes/announcements');
 const rankingsRoutes = require('./routes/rankings');
+const personnelRoutes = require('./routes/personnel');
 
 //#endregion
 
@@ -52,6 +53,7 @@ app.use(pageNotFoundRoutes);
 app.use(homeRoutes);
 app.use(announcementsRoutes);
 app.use(rankingsRoutes);
+app.use(personnelRoutes);
 
 
 //#region Start Server 
