@@ -7,6 +7,7 @@ const colors = require('colors');
 //#region Routes 
 
 const homeRoutes = require('./routes/home');
+const loginRoutes = require('./routes/login');
 
 //#endregion
 
@@ -38,10 +39,11 @@ app.set('view engine', 'hbs');
 
 
 app.use(homeRoutes);
+app.use(loginRoutes);
 
 
 const startServer = async () => {
-    await connectDB();
+    //await connectDB();
     app.listen(PORT, console.log(`Server running on Port ${PORT}`.green.underline))
 }
 
