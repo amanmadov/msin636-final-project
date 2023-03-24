@@ -6,9 +6,10 @@ const colors = require('colors');
 
 //#region Routes 
 
-const homeRoutes = require('./routes/home');
 const loginRoutes = require('./routes/authentication/login');
 const passwordRecoveryRoutes = require('./routes/authentication/password-recovery');
+const signupRoutes = require('./routes/authentication/signup');
+const homeRoutes = require('./routes/home');
 
 //#endregion
 
@@ -37,9 +38,11 @@ app.set('view engine', 'hbs');
 
 //#endregion
 
-app.use(homeRoutes);
 app.use(loginRoutes);
 app.use(passwordRecoveryRoutes);
+app.use(signupRoutes);
+app.use(homeRoutes);
+
 
 //#region Start Server 
 const startServer = async () => {
