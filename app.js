@@ -11,6 +11,7 @@ const passwordRecoveryRoutes = require('./routes/authentication/password-recover
 const signupRoutes = require('./routes/authentication/signup');
 const pageNotFoundRoutes = require('./routes/authentication/404');
 const homeRoutes = require('./routes/home');
+const announcementsRoutes = require('./routes/announcements');
 
 //#endregion
 
@@ -44,6 +45,7 @@ app.use(passwordRecoveryRoutes);
 app.use(signupRoutes);
 app.use(pageNotFoundRoutes);
 app.use(homeRoutes);
+app.use(announcementsRoutes);
 
 
 //#region Start Server 

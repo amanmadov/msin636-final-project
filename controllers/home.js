@@ -1,3 +1,3 @@
 exports.getHome = async (req, res) => {
-    res.render('layouts/main', { docTitle: 'FS Consulting LLC | Intranet'});
+    res.render('layouts/pages/homepage', { docTitle: 'FS Consulting LLC | Intranet'});
 }
