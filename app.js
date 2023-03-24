@@ -14,6 +14,7 @@ const signupRoutes = require('./routes/authentication/signup');
 const pageNotFoundRoutes = require('./routes/authentication/404');
 const homeRoutes = require('./routes/home');
 const announcementsRoutes = require('./routes/announcements');
+const rankingsRoutes = require('./routes/rankings');
 
 //#endregion
 
@@ -50,6 +51,7 @@ app.use(signupRoutes);
 app.use(pageNotFoundRoutes);
 app.use(homeRoutes);
 app.use(announcementsRoutes);
+app.use(rankingsRoutes);
 
 
 //#region Start Server 
