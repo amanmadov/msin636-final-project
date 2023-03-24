@@ -7,13 +7,13 @@ const colors = require('colors');
 //#region Routes 
 
 const homeRoutes = require('./routes/home');
-const loginRoutes = require('./routes/login');
+const loginRoutes = require('./routes/authentication/login');
+const passwordRecoveryRoutes = require('./routes/authentication/password-recovery');
 
 //#endregion
 
 const PORT = 8181;
 const app = express();
-
 
 //#region Express Middlewares  
 
@@ -37,14 +37,14 @@ app.set('view engine', 'hbs');
 
 //#endregion
 
-
 app.use(homeRoutes);
 app.use(loginRoutes);
+app.use(passwordRecoveryRoutes);
 
-
+//#region Start Server 
 const startServer = async () => {
     //await connectDB();
     app.listen(PORT, console.log(`Server running on Port ${PORT}`.green.underline))
 }
-
 startServer();
+//#endregion
