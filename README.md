@@ -1,4 +1,4 @@
-<img src="images/touro-university-logo-blue.png" width=80 alt="Logo" align="left"><img align="right" src="https://img.shields.io/badge/License-MIT-yellow.svg" width=100>
+<img src="https://github.com/amanmadov/cookie-crud/raw/main/images/touro-university-logo-blue.png" width=80 alt="Logo" align="left"><img align="right" src="https://img.shields.io/badge/License-MIT-yellow.svg" width=100>
 
 
 <br/>
