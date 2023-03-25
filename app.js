@@ -56,6 +56,11 @@ app.use(rankingsRoutes);
 app.use(personnelRoutes);
 
 
+
+app.all('*', (req, res) => {
+    res.render('layouts/authentication/404', { docTitle: 'Page Not Found' });
+})
+
 //#region Start Server 
 const startServer = async () => {
     //await connectDB();
